@@ -139,7 +139,7 @@ print(cves_X_test.shape)
 print(cves_X.corr())
 
 
-# In[166]:
+# In[168]:
 
 
 # Linear Regression
@@ -168,13 +168,16 @@ print('Coefficient of determination: %.2f'
 plt.scatter(cves_X_test.iloc[:,0], cves_y_test,  color='black')
 plt.plot(cves_X_test.iloc[:,0], cves_y_pred, color='blue', linewidth=0.5)
 
+plt.ylabel('CVSS severity score')
+plt.xlabel('access-impact-X')
+plt.title('Linear Regression - access / impact only')
 plt.xticks(())
 plt.yticks(())
 
 plt.show()
 
 
-# In[167]:
+# In[169]:
 
 
 # Ridge regression
@@ -201,6 +204,9 @@ print('Coefficient of determination: %.2f'
 plt.scatter(cves_X_test.iloc[:,0], cves_y_test,  color='black')
 plt.plot(cves_X_test.iloc[:,0], cves_y_pred_ridge, color='blue', linewidth=0.5)
 
+plt.ylabel('CVSS severity score')
+plt.xlabel('access-impact-X')
+plt.title('Ridge Regression - access / impact only')
 plt.xticks(())
 plt.yticks(())
 
