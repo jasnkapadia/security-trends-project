@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+
+# CVES Dataset Analysis
+# Jas Kapadia (z5208456)
+# COMP6441 20T1 (Tutorial F09B)
+# some code adapted from NumPy, sklearn documentation
+
 # coding: utf-8
 
 # In[112]:
